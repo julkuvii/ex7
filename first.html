@@ -1,0 +1,29 @@
+
+<link rel="stylesheet" href="CSS/mystyle.css">
+<h2>First Page</h2>
+    <form id="sourceForm">
+      <label>Language</label><br>
+      
+      <select name="language" id="language" onchange="showLanguage()">
+          <option>English</option>
+          <option>Finnish</option>
+          <option>Swedish</option>
+      </select><br>
+
+      <label>Phone</label><br>
+
+      <input type="radio" name="phone" onclick="showPhone('Nokia')">
+      <input type="radio" name="phone" onclick="showPhone('Huawei')">
+      <input type="radio" name="phone" onclick="showPhone('Samsung')">
+    </form><br>
+
+    <form id="targetForm">
+      <label>Language</label><br>
+      
+      <input type="text" id="selected_language"><br>
+
+      <label>Phone</label><br>
+
+      <input type="text" id="selected_phone"><br>
+    </form>
+    <script src="form.js"></script>
